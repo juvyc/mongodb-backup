@@ -612,7 +612,7 @@ function backup(options) {
   }
 
   var my = {
-    dir: path.join("/tmp/", 'dump', path.sep),
+    dir: path.join('/tmp/', 'dump', path.sep),
     uri: String(opt.uri),
     root: path.resolve(String(opt.root || '')) + path.sep,
     stream: opt.stream || null,
@@ -632,3 +632,5 @@ function backup(options) {
   return wrapper(my);
 }
 module.exports = backup;
+
+
